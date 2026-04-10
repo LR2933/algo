@@ -1,5 +1,5 @@
 def solve():
-    n = 2023
+    n = 2022
     count = [0 for _ in range(n * 2 + 1)]
 
     for i in range(1, n + 1):
@@ -9,7 +9,8 @@ def solve():
             else:
                 count[i + j] += i
 
-    print(max(count))
+    print(f"count:{max(count)}")
+    print(f"value:{count.index(max(count))}")
 
 
 if __name__ == "__main__":
